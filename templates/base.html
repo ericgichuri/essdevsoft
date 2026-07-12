@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}ESS DEVSOFT | Software Development Company in Kenya{% endblock %}
+    </title>
+    <meta name="description" content="{% block meta_description %}ESS DEVSOFT builds modern websites, business systems, APIs, desktop applications and custom software solutions for businesses in Kenya and beyond.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}ESS DEVSOFT, Software Development Kenya, Web Development, Custom Software, Flask, Python, Business Systems, API Development, Website Design, Nairobi{% endblock %}">
+    <meta name="author" content="ESS DEVSOFT">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{% block canonical %}{{ request.url }}{% endblock %}">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}ESS DEVSOFT | Software Development Company{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Professional software development, websites, APIs and business systems built for modern businesses.{% endblock %}">
+    <meta property="og:url" content="{{ request.url }}">
+    <meta property="og:site_name" content="ESS DEVSOFT">
+    <meta property="og:image" content="{% block og_image %}{{ url_for('static', filename='images/essdevsoft-social.png', _external=True) }}{% endblock %}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}ESS DEVSOFT | Software Development Company{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}Professional websites, software, APIs and digital solutions.{% endblock %}">
+    <meta name="twitter:image" content="{% block twitter_image %}{{ url_for('static', filename='images/essdevsoft-social.png', _external=True) }}{% endblock %}">
+    <meta name="theme-color" content="#1a365d">
+    
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/essdevsoft.svg') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="min-h-screen flex flex-col bg-[var(--background)] text-[var(--text)]">
+<header class="sticky top-0 z-50 bg-[var(--surface)] backdrop-blur-xl border-b border-[var(--border)]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="h-[88px] flex items-center justify-between">
+            <a href="/" class="flex items-center gap-4">
+                <img src="{{ url_for('static', filename='images/essdevsoft.svg') }}"
+                     class="h-14 w-auto">
+                <div>
+                    <h1 class="font-black text-xl tracking-wide text-[var(--primary)]">
+                        ESS <span class="text-[var(--accent)]">DEVSOFT</span>
+                    </h1>
+                    <p class="uppercase hidden lg:block text-[11px] text-[var(--text-light)]">
+                        Smart Technologies
+                    </p>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-10 font-medium">
+                <a href="/" class="hover:text-[var(--accent)] transition">Home</a>
+                <a href="/services" class="hover:text-[var(--accent)] transition">Services</a>
+                <a href="/projects" class="hover:text-[var(--accent)] transition">Projects</a>
+                <a href="/about" class="hover:text-[var(--accent)] transition">About</a>
+                <a href="/contact" class="hover:text-[var(--accent)] transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                        class="w-10 h-10 rounded-lg border border-[var(--border)] hover:bg-[var(--border)] transition">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="/contact"
+                   class="hidden lg:inline-flex px-6 py-3 bg-[var(--accent)] text-white font-semibold rounded-lg hover:opacity-90 transition">
+                    Get Quote
+                </a>
+                <button id="mobile-btn" class="lg:hidden text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="mobile-overlay"
+     class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-[100]">
+    <aside id="mobile-menu"
+           class="absolute top-0 right-0 h-full w-80 bg-[var(--surface)]
+           shadow-2xl transform translate-x-full transition-transform duration-300">
+        <div class="h-20 px-6 border-b border-[var(--border)] flex items-center justify-between">
+            <span class="font-bold text-xl text-[var(--primary)]">
+                Menu
+            </span>
+            <button id="close-btn">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col p-6">
+            <a class="py-4 border-b border-[var(--border)] hover:text-[var(--accent)]" href="/">Home</a>
+            <a class="py-4 border-b border-[var(--border)] hover:text-[var(--accent)]" href="/services">Services</a>
+            <a class="py-4 border-b border-[var(--border)] hover:text-[var(--accent)]" href="/projects">Projects</a>
+            <a class="py-4 border-b border-[var(--border)] hover:text-[var(--accent)]" href="/about">About</a>
+            <a class="py-4 border-b border-[var(--border)] hover:text-[var(--accent)]" href="/contact">Contact</a>
+            <a href="/contact"
+               class="mt-8 text-center py-3 rounded-lg bg-[var(--accent)] text-white font-semibold">
+                Get Quote
+            </a>
+        </nav>
+    </aside>
+</div>
+<main class="flex-grow">
+{% block content %}{% endblock %}
+</main>
+<section class="py-20 bg-[var(--primary)]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-black text-white">
+            Ready to Start Your Project?
+        </h2>
+        <p class="mt-5 text-lg text-white/80 max-w-2xl mx-auto">
+            Let's discuss your idea and build a solution that works for your business.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="/contact"
+               class="px-8 py-4 bg-[var(--accent)] text-white font-semibold rounded-lg hover:opacity-90 transition">
+                Get in Touch
+            </a>
+            <a href="/projects"
+               class="px-8 py-4 border border-white/20 text-white rounded-lg hover:bg-white hover:text-[var(--primary)] transition">
+                View Projects
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="border-t border-[var(--border)] py-8 text-center text-[var(--text-light)]">
+© 2026 ESS DEVSOFT • Nairobi, Kenya
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

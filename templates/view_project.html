@@ -1,0 +1,345 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ project.title }} | ESS DEVSOFT
+{% endblock %}
+
+{% block meta_description %}
+{{ project.short_description }}
+{% endblock %}
+
+{% block meta_keywords %}
+{{ project.title }}, {{ project.category }}, ESS DEVSOFT, {{ project.client }}
+{% endblock %}
+
+{% block og_title %}
+{{ project.title }} | ESS DEVSOFT
+{% endblock %}
+
+{% block og_description %}
+{{ project.short_description }}
+{% endblock %}
+
+{% block og_image %}
+{{ url_for('static', filename=project.image, _external=True) }}
+{% endblock %}
+
+{% block twitter_title %}
+{{ project.title }} | ESS DEVSOFT
+{% endblock %}
+
+{% block twitter_description %}
+{{ project.short_description }}
+{% endblock %}
+
+{% block twitter_image %}
+{{ url_for('static', filename=project.image, _external=True) }}
+{% endblock %}
+
+{% block content %}
+<section class="bg-[var(--primary)] pt-8 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <a href="/projects"
+           class="inline-flex items-center text-white/80 hover:text-white transition">
+            <i class="fa-solid fa-arrow-left mr-2"></i>
+            Back to Projects
+        </a>
+        <div class="grid lg:grid-cols-2 gap-12 items-center mt-8">
+            <div>
+                <span class="inline-flex px-4 py-2 rounded-full bg-white/10 text-white text-sm font-semibold">
+                    {{ project.category }}
+                </span>
+                <h1 class="mt-5 text-2xl lg:text-4xl font-black text-white">
+                    {{ project.title }}
+                </h1>
+                <p class="mt-6 text-lg lg:text-xl text-slate-300 leading-8">
+                    {{ project.short_description }}
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <div class="px-4 py-2 rounded-lg bg-white/10 text-white">
+                        {{ project.year }}
+                    </div>
+                    <div class="px-4 py-2 rounded-lg bg-white/10 text-white">
+                        {{ project.status }}
+                    </div>
+                    <div class="px-4 py-2 rounded-lg bg-white/10 text-white">
+                        {{ project.client }}
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4 mt-10">
+                    {% if project.project_url %}
+                    <a href="{{ project.project_url }}"
+                       target="_blank"
+                       class="px-7 py-3 rounded-lg bg-[var(--accent)] text-white font-semibold">
+                        Live Preview
+                    </a>
+                    {% endif %}
+                    {% if project.github %}
+                    <a href="{{ project.github }}"
+                       target="_blank"
+                       class="px-7 py-3 rounded-lg border border-white/20 text-white">
+                        GitHub
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div>
+                <div class="bg-white rounded-3xl shadow-2xl p-8">
+                    <img
+                        src="{{ url_for('static', filename=project.image) }}"
+                        alt="{{ project.title }}"
+                        class="w-full h-[340px] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-10 bg-[var(--background)]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+            <div class="lg:col-span-2">
+                <span class="inline-flex items-center px-4 py-2 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-sm font-semibold">
+                    Project Overview
+                </span>
+                <h2 class="mt-5 text-2xl lg:text-3xl font-black text-[var(--text)]">
+                    About {{ project.title }}
+                </h2>
+                <p class="mt-8 text-lg leading-9 text-[var(--text-light)]">
+                    {{ project.description }}
+                </p>
+                <div class="grid sm:grid-cols-2 gap-5 mt-10">
+                    <div class="flex items-start gap-4 p-3 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
+                        <div class="w-12 h-12 rounded-lg bg-[var(--primary)] text-white flex items-center justify-center">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">
+                                Modern Architecture
+                            </h4>
+                            <p class="text-sm text-[var(--text-light)] mt-1">
+                                Built using scalable technologies and clean software architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-3 rounded-xl bg-[var(--surface)] border border-[var(--border)]">
+                        <div class="w-12 h-12 rounded-lg bg-[var(--accent)] text-white flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">
+                                Secure & Reliable
+                            </h4>
+                            <p class="text-sm text-[var(--text-light)] mt-1">
+                                Designed with performance, security and long-term reliability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden">
+                    <div class="px-6 py-5 border-b border-[var(--border)]">
+                        <h3 class="text-xl font-bold">
+                            Project Details
+                        </h3>
+                    </div>
+                    <div class="divide-y divide-[var(--border)]">
+                        <div class="flex justify-between items-center px-6 py-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-regular fa-user text-[var(--accent)]"></i>
+                                <span class="text-[var(--text-light)]">
+                                    Client
+                                </span>
+                            </div>
+                            <strong class="text-sm lg:text-base">
+                                {{ project.client }}
+                            </strong>
+                        </div>
+                        <div class="flex justify-between items-center px-6 py-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-regular fa-calendar text-[var(--accent)]"></i>
+                                <span class="text-[var(--text-light)]">
+                                    Year
+                                </span>
+                            </div>
+                            <strong class="text-sm lg:text-base">
+                                {{ project.year }}
+                            </strong>
+                        </div>
+                        <div class="flex justify-between items-center px-6 py-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-green-500"></i>
+                                <span class="text-[var(--text-light)]">
+                                    Status
+                                </span>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm font-semibold">
+                                {{ project.status }}
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-center px-6 py-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-folder-tree text-[var(--accent)]"></i>
+                                <span class="text-[var(--text-light)]">
+                                    Category
+                                </span>
+                            </div>
+                            <strong class="text-sm lg:text-base">
+                                {{ project.category }}
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-10 bg-[var(--surface)]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+            <span class="inline-flex items-center px-4 py-2 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] text-sm font-semibold">
+                Key Features
+            </span>
+            <h2 class="mt-5 text-2xl lg:text-3xl font-black text-[var(--text)]">
+                What This Project Offers
+            </h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-7">
+            {% for feature in project.features %}
+            <div class="group flex items-center gap-4 rounded-xl border border-[var(--border)] bg-[var(--background)] px-5 py-2 lg:py-3 hover:border-[var(--accent)] hover:shadow-lg transition">
+                <div class="w-6 h-6 rounded-lg bg-[var(--primary)] text-white flex items-center justify-center group-hover:bg-[var(--accent)] transition">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="font-semibold text-sm lg:text-base text-[var(--text)]">
+                    {{ feature }}
+                </h3>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="py-10 bg-[var(--background)]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+            <span class="inline-flex items-center px-4 py-2 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] font-semibold text-sm">
+                Gallery
+            </span>
+            <h2 class="mt-5 text-2xl lg:text-3xl font-black text-[var(--text)]">
+                Project Screenshots
+            </h2>
+            <p class="mt-5 text-lg text-[var(--text-light)]">
+                A visual walkthrough of the interface and key functionality.
+            </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+            {% for image in project.gallery %}
+                <button type="button"
+                    class="gallery-item group overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-sm hover:shadow-xl transition text-left"
+                    data-image="{{ url_for('static', filename=image) }}">
+                    <div class="aspect-video overflow-hidden">
+                        <img
+                            src="{{ url_for('static', filename=image) }}"
+                            alt="{{ project.title }}"
+                            class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4">
+                        <span class="font-semibold">
+                            Screenshot {{ loop.index }}
+                        </span>
+                        <i class="fa-solid fa-expand text-[var(--accent)]"></i>
+                    </div>
+                </button>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="py-8 bg-[var(--surface)]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-2xl font-bold">
+        Technology Stack
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+            {% for tech in project.technologies %}
+            <span class="px-5 py-3 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] font-semibold">
+            {{ tech }}
+            </span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<div id="galleryModal" class="fixed inset-0 z-[9999] hidden">
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+
+    <div class="relative h-full flex items-center justify-center p-6">
+        <button id="closeGallery"
+                class="absolute top-6 right-6 w-12 h-12 rounded-full bg-white text-black text-xl hover:bg-gray-200 transition">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="galleryPreview"
+             src=""
+             class="max-w-[95vw] max-h-[90vh] rounded-xl shadow-2xl">
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(function () {
+
+    // Open modal
+
+    $('.gallery-item').on('click', function () {
+
+        const image = $(this).data('image');
+
+        $('#galleryPreview').attr('src', image);
+
+        $('#galleryModal')
+            .fadeIn(200)
+            .removeClass('hidden');
+
+        $('body').css('overflow', 'hidden');
+
+    });
+
+    // Close button
+
+    $('#closeGallery').on('click', function () {
+
+        $('#galleryModal').fadeOut(200, function () {
+
+            $(this).addClass('hidden');
+
+        });
+
+        $('body').css('overflow', '');
+
+    });
+
+    // Click overlay to close
+
+    $('#galleryModal').on('click', function (e) {
+
+        if (e.target === this || $(e.target).hasClass('absolute')) {
+
+            $('#closeGallery').click();
+
+        }
+
+    });
+
+    // ESC key
+
+    $(document).on('keydown', function (e) {
+
+        if (e.key === 'Escape') {
+
+            $('#closeGallery').click();
+
+        }
+
+    });
+
+});
+</script>
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}
+Projects | ESS DEVSOFT
+{% endblock %}
+
+{% block content %}
+<section class="py-16 bg-[var(--primary)]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <span class="inline-flex px-4 py-2 rounded-full bg-white/10 text-white font-semibold text-sm">
+            Our Portfolio
+        </span>
+        <h1 class="mt-5 text-4xl lg:text-5xl font-black text-white">
+            Software We've Built
+        </h1>
+        <p class="mt-5 max-w-3xl mx-auto text-slate-300">
+            From business management systems to APIs, websites and enterprise
+            software, explore some of the digital solutions we've delivered.
+        </p>
+    </div>
+</section>
+<section class="py-8 bg-[var(--background)] border-b border-[var(--border)]">
+    <div class="max-w-7xl mx-auto px-3 lg:px-6">
+        <div class="flex flex-wrap justify-center gap-3">
+            <button
+                class="filter-btn active px-5 py-2 text-sm lg:text-base rounded-full bg-[var(--accent)] text-white font-semibold"
+                data-filter="all">
+                All
+            </button>
+            {% set categories = [] %}
+            {% for project in projects %}
+                {% if project.category not in categories %}
+                    {% set _ = categories.append(project.category) %}
+                    <button
+                        class="filter-btn px-2 py-2 text-sm lg:text-base rounded-full border border-[var(--border)] hover:border-[var(--accent)] transition"
+                        data-filter="{{ project.category }}">
+                        {{ project.category }}
+                    </button>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-3 lg:px-6">
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            {% for project in projects %}
+                <article
+                class="project-card group rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--surface)] shadow-sm hover:shadow-xl transition"
+                data-category="{{ project.category }}">
+                    <div class="aspect-video bg-white overflow-hidden">
+                        <img
+                        src="{{ url_for('static', filename=project.image) }}"
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs uppercase tracking-widest font-bold text-[var(--accent)]">
+                                {{ project.category }}
+                            </span>
+                            <span class="text-xs text-[var(--text-light)]">
+                                {{ project.year }}
+                            </span>
+                        </div>
+                        <h3 class="mt-3 text-2xl font-bold">
+                            {{ project.title }}
+                        </h3>
+                        <p class="mt-3 text-[var(--text-light)] line-clamp-3">
+                            {{ project.short_description }}
+                        </p>
+                        <div class="mt-5 flex flex-wrap gap-2">
+                            {% for tech in project.technologies[:3] %}
+                            <span class="px-3 py-1 rounded-full text-xs bg-[var(--primary)]/10 text-[var(--primary)]">
+                                {{ tech }}
+                            </span>
+                            {% endfor %}
+                        </div>
+                        <div class="mt-6 flex items-center justify-between">
+                            <span
+                            class="text-sm font-medium text-[var(--text-light)]">
+                                {{ project.client }}
+                            </span>
+                            <a
+                            href="{{ url_for('view_project', project_code=project.code) }}"
+                            class="font-semibold text-[var(--accent)]">
+                                View Project
+                                <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+
+$(".filter-btn").click(function(){
+
+    let category=$(this).data("filter");
+
+    $(".filter-btn")
+    .removeClass("bg-[var(--accent)] text-white active")
+    .addClass("border border-[var(--border)]");
+
+    $(this)
+    .addClass("bg-[var(--accent)] text-white active")
+    .removeClass("border");
+
+    if(category==="all"){
+
+        $(".project-card").fadeIn(250);
+
+    }
+
+    else{
+
+        $(".project-card").hide();
+
+        $('.project-card[data-category="'+category+'"]').fadeIn(250);
+
+    }
+
+});
+
+</script>
+
+{% endblock %}
