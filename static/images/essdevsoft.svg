@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1200"
-   height="1200"
-   viewBox="0 0 317.49999 317.5"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="essdevsoft2.svg"
-   inkscape:export-filename="essdevsoft2.png"
+   sodipodi:docname="essdevsoftnew.svg"
+   inkscape:export-filename="essdevsoftnew.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -23,127 +23,136 @@
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="false"
+     inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:export-bgcolor="#ffffffff"
-     inkscape:zoom="0.47"
-     inkscape:cx="305.31915"
-     inkscape:cy="535.10638"
+     inkscape:zoom="0.59"
+     inkscape:cx="325.42373"
+     inkscape:cy="514.40678"
      inkscape:window-width="1920"
      inkscape:window-height="1000"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
   <defs
-     id="defs1" />
-  <rect
-     style="font-variation-settings:normal;opacity:0.1;vector-effect:none;fill:#980000;fill-opacity:0;fill-rule:evenodd;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-     id="rect14"
-     width="317.5"
-     height="317.5"
-     x="0"
-     y="0"
-     sodipodi:insensitive="true" />
-  <rect
-     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-     id="rect2"
-     width="317.5"
-     height="317.5"
-     x="0"
-     y="0" />
-  <g
-     id="g2">
-    <path
-       id="path7"
-       style="fill:#ff6b00;fill-opacity:1;fill-rule:evenodd;stroke:#0f172a;stroke-width:0;paint-order:markers stroke fill"
-       d="m 84.570653,129.02672 -8.37017,16.93662 22.986638,0.47783 -0.499064,27.12599 -39.181608,0.126 -9.507492,17.23575 c 15.444039,-0.12635 55.718453,0.12218 60.992903,0.009 7.77513,-0.16729 6.55615,-12.28591 6.55615,-12.28591 0,0 -0.47579,-30.96136 -0.1275,-37.6396 0.53149,-10.19069 -5.25498,-12.28838 -5.25498,-12.28838 z"
-       sodipodi:nodetypes="ccccccscscc" />
-    <rect
-       style="font-variation-settings:normal;vector-effect:none;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.18385;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       id="rect8"
-       width="1.3229166"
-       height="105.83333"
-       x="131.60376"
-       y="82.613564" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.1464px;font-family:Ethnocentric;-inkscape-font-specification:'Ethnocentric, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:#0f172a;stroke-width:0;paint-order:markers stroke fill"
-       x="151.63879"
-       y="121.01408"
-       id="text8"
-       transform="scale(0.91057034,1.0982128)"><tspan
-         sodipodi:role="line"
-         id="tspan8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:59.1464px;font-family:Ethnocentric;-inkscape-font-specification:'Ethnocentric, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0"
-         x="151.63879"
-         y="121.01408">ESS</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.0612px;font-family:Ethnocentric;-inkscape-font-specification:'Ethnocentric, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:#0f172a;stroke-width:0;stroke-miterlimit:0;paint-order:markers stroke fill"
-       x="202.35927"
-       y="128.53934"
-       id="text9"
-       transform="scale(0.70094286,1.4266498)"><tspan
-         sodipodi:role="line"
-         id="tspan9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.0612px;font-family:Ethnocentric;-inkscape-font-specification:'Ethnocentric, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0b2c6b;fill-opacity:1;stroke-width:0;stroke-miterlimit:0"
-         x="202.35927"
-         y="128.53934"><tspan
-   style="fill:#ff6b00;fill-opacity:1"
-   id="tspan2">DEV</tspan>SOFT</tspan></text>
-    <rect
-       style="font-variation-settings:normal;opacity:0.1;vector-effect:none;fill:#980000;fill-opacity:0;fill-rule:evenodd;stroke:none;stroke-width:0.241006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       id="rect1"
-       width="48.222446"
-       height="71.69355"
-       x="85.58625"
-       y="126.90501" />
-    <g
-       id="g12"
-       transform="matrix(0.94367142,0,0,1,17.354286,-15.07961)">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.225px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:#0f172a;stroke-width:0;stroke-miterlimit:0;paint-order:markers stroke fill"
-         x="16.931526"
-         y="171.43559"
-         id="text11"
-         transform="scale(0.68583554,1.4580755)"><tspan
-           sodipodi:role="line"
-           id="tspan11"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.225px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0"
-           x="16.931526"
-           y="171.43559">SMART TECHNOLOGIES</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.225px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:#0f172a;stroke-width:0;stroke-miterlimit:0;paint-order:markers stroke fill"
-         x="224.06665"
-         y="186.05453"
-         id="text12"
-         transform="scale(0.74963767,1.3339778)"><tspan
-           sodipodi:role="line"
-           id="tspan12"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.225px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0"
-           x="224.06665"
-           y="186.05453">SMART SERVICES</tspan></text>
-      <rect
-         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ff6b00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0793434;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-         id="rect12"
-         width="1.3229166"
-         height="19.711298"
-         x="158.76984"
-         y="229.12917" />
-    </g>
-    <path
-       style="opacity:0.992395;fill:#0b2c6b;fill-opacity:1;fill-rule:evenodd;stroke:#fce362;stroke-width:0;stroke-miterlimit:0;paint-order:markers stroke fill"
-       d="M 29.170254,106.63453 40.325418,85.297157 H 105.83099 L 96.291727,101.70133 H 49.014003 v 27.55081 l 32.279155,-0.54102 -8.358178,17.15828 -23.920977,0.45263 v 26.67171 l 7.314435,0.21337 -9.17506,17.92338 H 29.170254 Z"
-       id="path2"
-       sodipodi:nodetypes="cccccccccccccc" />
-  </g>
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,6.0385828,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,6.379408,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,11.805933,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,8.9053531,0,1 @ F,0,0,1,0,11.630236,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,20.457587,0,1 @ F,0,0,1,0,20.709722,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1">
+    <g
+       id="g12">
+      <path
+         d="M 72.230887,76.338385 70.881936,95.99382 H 115.82002 L 102.8071,119.86523 H 78.583148 a 6.9791527,6.9791527 137.57062 0 0 -6.951074,6.35374 l -1.19074,13.23439 h 27.452123 l -9.252574,25.36703 H 58.026785 l -12.405137,-8.84982 3.99234,-98.63595 A 12.293451,12.293451 136.15891 0 1 61.897381,45.538346 H 134.25835 L 121.24534,70.313973 H 78.682925 a 6.4672146,6.4672146 136.96302 0 0 -6.452038,6.024412 z"
+         id="text1"
+         style="font-weight:bold;font-size:180.844px;font-family:Poppins;-inkscape-font-specification:'Poppins, Bold';text-align:center;text-anchor:middle;fill:#193a7a;fill-rule:evenodd;stroke:#c8a24a;stroke-width:0;stroke-miterlimit:0;paint-order:markers stroke fill"
+         transform="matrix(1.5421133,0,0,1.0860364,-13.725801,-12.301199)"
+         aria-label="E"
+         sodipodi:nodetypes="cccccccccccccc"
+         inkscape:path-effect="#path-effect12"
+         inkscape:original-d="M 72.644342,70.313973 70.881936,95.99382 H 115.82002 L 102.8071,119.86523 H 72.20374 l -1.762406,19.58813 h 27.452123 l -9.252574,25.36703 H 58.026785 l -12.405137,-8.84982 4.4698,-110.432224 h 84.166902 l -13.01301,24.775627 z" />
+      <path
+         id="rect1"
+         style="vector-effect:none;fill:#f97316;fill-rule:evenodd;stroke-width:0.683867;stop-color:#000000"
+         d="m 114.43693,79.545126 -6.80688,10.732743 9.45272,9.952191 h 44.95286 a 8.9053531,8.9053531 45 0 1 8.90535,8.90535 v 2.17103 a 11.630241,11.630241 134.99999 0 1 -11.63024,11.63025 l -78.296648,3e-5 -16.318821,20.68486 110.375249,6e-5 a 20.457576,20.457576 135.00002 0 0 20.45759,-20.45758 v -22.90921 c 0,-11.437666 -9.27207,-20.720771 -20.70971,-20.704007 -20.14357,0.02953 -40.99012,0.102123 -60.38147,-0.0057 z"
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:path-effect="#path-effect4"
+         inkscape:original-d="m 114.43693,79.545126 -6.80688,10.732743 9.45272,9.952191 h 53.85821 v 22.70662 l -89.926888,4e-5 -16.318821,20.68486 130.832839,7e-5 V 79.545126 c -26.14864,-0.03726 -54.94291,0.145417 -81.09118,0 z"
+         transform="matrix(1.2297203,0,0,1.30434,-0.70083928,40.09678)" />
+      <path
+         id="rect5"
+         style="vector-effect:none;fill:#f97316;fill-rule:evenodd;stroke-width:0.562261;stop-color:#000000"
+         d="m 166.19795,103.53161 h 51.59256 l -20.06757,33.59748 h -51.59257 z" />
+      <path
+         id="rect6"
+         style="vector-effect:none;fill:#193a7a;fill-opacity:1;fill-rule:evenodd;stroke-width:0.562261;stop-color:#000000"
+         d="m 73.396619,200.44807 h 17.877214 l -20.06744,26.98009 H 53.329179 Z"
+         sodipodi:nodetypes="ccccc" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#193a7a;stroke-width:2.87534;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="path6"
+         cx="37.339462"
+         cy="180.09041"
+         rx="4.2792759"
+         ry="4.3470163" />
+      <path
+         id="rect7"
+         style="font-variation-settings:normal;vector-effect:none;fill:#193a7a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.341683;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         d="M 60.477214,179.40691 H 40.82971 l 1.35e-4,2.52929 h 19.647369 l 17.370872,9.61135 H 98.48488 v -2.52931 H 77.848086 c -5.948473,-3.26091 -11.412714,-6.3623 -17.370872,-9.61133 z"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         id="circle10"
+         style="fill:none;fill-rule:evenodd;stroke:#193a7a;stroke-width:2.87534;stroke-miterlimit:0;paint-order:markers stroke fill"
+         d="m 34.824251,167.66656 a 4.2792757,4.3470162 0 0 1 -4.279276,4.34703 4.2792757,4.3470162 0 0 1 -4.279275,-4.34703 4.2792757,4.3470162 0 0 1 4.279275,-4.34701 4.2792757,4.3470162 0 0 1 4.279276,4.34701 z" />
+      <path
+         id="path11"
+         style="font-variation-settings:normal;vector-effect:none;fill:#193a7a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.358568;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         d="M 56.627947,166.98307 H 34.990622 l 1.49e-4,2.52929 h 21.637176 l 19.130126,9.61135 H 98.48488 V 176.5944 H 75.758073 c -6.550911,-3.26091 -12.568549,-6.36229 -19.130126,-9.61133 z"
+         sodipodi:nodetypes="ccccccccc" />
+      <ellipse
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#193a7a;stroke-width:2.87534;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="circle11"
+         cx="37.339558"
+         cy="155.24272"
+         rx="4.2792759"
+         ry="4.3470163" />
+      <path
+         id="path12"
+         style="font-variation-settings:normal;vector-effect:none;fill:#193a7a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.34273;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         d="M 60.243925,154.55922 H 40.475826 l 1.36e-4,2.52929 19.767963,10e-6 17.477493,9.61134 20.763462,-1.2e-4 v -2.52919 l -20.763462,-1e-4 c -5.984984,-3.26092 -11.482764,-6.3622 -17.477493,-9.61123 z"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+  </g>
 </svg>
